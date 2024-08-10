@@ -4,8 +4,17 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+li{
+    margin: 1rem;
+    width: 200px;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+nav{
+    margin: 0;
+ }
 .bar {
     background-color: #3f3f3f;
     border-radius: 4px;
@@ -14,23 +23,32 @@ a { color:blue; text-decoration: none;}
     border-bottom: solid 1px #cdcdcd;
 }
 .content {
-    max-width: 1440px;
     margin: auto;
-    grid-gap: 3rem;
     display: grid;
-    gap: 3rem;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
     padding-left: 1rem;
     padding-right: 1rem;
 }
- nav{
-    margin: 0;
- }
+
 .nav-logo{
     margin-top: 5rem;
-    margin: 0 15rem 0;
-    width: 300px;
+    margin: 0 ;
+    padding-left:2.5rem ;
+}
+
+.icons-top-right{
+    margin-top: 0;
+    margin-right: 4rem ;
+    position: absolute;
+    right: 9px;
+
+}
+
+
+.menu-icon{
+    margin-bottom: 18px;
+    width: 20px;
+    height: 20px;
 }
 .footer {
     margin: 15rem;
@@ -41,50 +59,57 @@ a { color:blue; text-decoration: none;}
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
-.sidebar {
-    border-right: solid 1px #cdcdcd;
-}
-figure {
-    text-align: center;
-}
-.pesquisa{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    display: flex;
-    justify-content: end;
-    margin-right: 13.1rem;
-}
-button {
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background-color: rgb(117, 117, 117);
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
+.sidebar a {
     display: inline-block;
-    cursor: pointer;
-    box-sizing: border-box;
-    margin: 0;
-    padding-block: 0.4rem;
-    padding-inline: 0.4rem;
-    border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: #606060;
+    list-style: none; 
+    padding-left: 0;
 }
-input[type="search" i]{
-    align-items: end;
+.sidebar img{
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+.nav-search-input{
+    padding: 0 0 0 1rem;
+    background-color: #fff;
+    position: absolute;
+    margin-top: .5rem;
+    margin-left: 25%;
+    width: 400px;
+    height: 35px;
+    border-radius: 25px 0 0 25px;
     outline: none;
+    border-color: #cacaca;
+    border-style: solid;
+}
+.nav-search{
+    background-image: url(/assets/images/icone\ de\ busca.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #fff;
+    position: absolute;
+    margin-top: .5rem;
+    margin-left: 46%;
+    width: 70PX;
+    height: 39px;
+    border-radius: 0 20px 20px 0;
+    border-color: #cacaca;
+    border-style: solid;
+
+}
+.sidebar a:hover{
+    background-color: #dadada;
+    margin: 4px;
+    padding: 0px 10px 0px 10px;;
+    border-radius: 6px;
+}
+.video-picture{
+    background-color: #ebebeb;
+    margin-right: 0;
 }
 
-input[type="search" i] {
-    border-radius: 4px;
-    appearance: auto;
-    box-sizing: border-box;
-    padding-block: 0.4rem;
-    padding-inline: 0.4rem;
-    outline: none;
-}
+
+
