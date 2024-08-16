@@ -1,8 +1,11 @@
 body, html {
-    background-color: #f1f0f0;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+figure{
+    margin: 0;
+    padding: 0 ;
 }
 li{
     margin: 1rem;
@@ -24,28 +27,23 @@ nav{
 }
 .content {
     margin: auto;
-    display: grid;
-    grid-template-areas: "sidebar main anchors";
+    display: grid ;
+    grid-template-columns : 216px auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.nav-logo{
+.nav-bar{
+    background: #f9f9f9a3;
     margin-top: 5rem;
     margin: 0 ;
-    padding-left:2.5rem ;
+    padding-left:2.1rem ;
 }
-
-.icons-top-right{
-    margin-top: 0;
-    margin-right: 4rem ;
-    position: absolute;
-    right: 9px;
-
+.style-scope{
+    cursor: pointer;
 }
-
-
 .menu-icon{
+    cursor: pointer;
     margin-bottom: 18px;
     width: 20px;
     height: 20px;
@@ -59,6 +57,7 @@ nav{
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
+
 .sidebar a {
     display: inline-block;
     width: 200px;
@@ -71,6 +70,12 @@ nav{
 .sidebar img{
     margin-right: 1rem;
     vertical-align: middle;
+}
+.sidebar a:hover{
+    background-color: #dadada;
+    margin: 4px;
+    padding: 0px 10px 0px 10px;;
+    border-radius: 6px;
 }
 .nav-search-input{
     padding: 0 0 0 1rem;
@@ -86,6 +91,7 @@ nav{
     border-style: solid;
 }
 .nav-search{
+    cursor: pointer;
     background-image: url(/assets/images/icone\ de\ busca.svg);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -98,17 +104,80 @@ nav{
     border-radius: 0 20px 20px 0;
     border-color: #cacaca;
     border-style: solid;
-
 }
-.sidebar a:hover{
-    background-color: #dadada;
-    margin: 4px;
-    padding: 0px 10px 0px 10px;;
-    border-radius: 6px;
+[src*=whatsapp]{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+.top-right-container{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 34px 34px 34px;
+    gap: 15px;
+}
+.container {
+    height: 120%;
+    margin: 1rem 0 0 2rem;
+    padding: 1rem 0 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 310px) ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
 }
 .video-picture{
-    background-color: #ebebeb;
+    max-width: 100%;
     margin-right: 0;
+}
+.video-picture h1{
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+.video-picture span{
+    cursor: pointer;
+    color: #515151;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.thumb-container{
+    width: 250px;
+    height: 150px;
+}
+.thumb img{
+    max-width: 250px;
+    min-height: 141px;
+    min-width: 250px;
+    min-height: 141px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    display: flex;
+    border-radius: 9px;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: 42px  180px;
+}
+.item-01{
+    margin-top: 0;
+    padding-left: 10px;
+
+}
+.item-02{
+    max-width: 129px;
+    padding-left:10px ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 
