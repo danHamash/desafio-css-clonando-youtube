@@ -132,6 +132,7 @@ nav{
 .video-picture{
     max-width: 100%;
     margin-right: 0;
+    cursor: pointer;
 }
 .video-picture h1{
     cursor: pointer;
